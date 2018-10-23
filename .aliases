@@ -9,11 +9,24 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # Shortcuts
-alias d="cd ~/Documents/Dropbox"
-alias dl="cd ~/Downloads"
-alias dt="cd ~/Desktop"
-alias p="cd ~/projects"
-alias g="git"
+alias gst="git status -s"
+alias gcd="git checkout develop"
+alias gcm="git checkout master"
+alias gco="git checkout"
+alias glog="git log --pretty=oneline -n 20 --graph --abbrev-commit"
+alias gl="git pull"
+alias gcam="git commit -am"
+alias gpu="git push -u"
+alias gprp="git pull --rebase && git push"
+alias gdm="git branch --merged | egrep -v \"(^\*|master|develop)\" | xargs git branch -d"
+
+alias mci="mvn clean install"
+alias mct="mvn clean test"
+alias mcp="mvn clean package"
+alias mcc="mvn clean compile"
+alias mcist="mvn clean install -DskipTests"
+
+alias cddot="cd ~/dev/project/dotfiles"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
