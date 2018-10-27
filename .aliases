@@ -16,6 +16,7 @@ alias gco="git checkout"
 alias glog="git log --pretty=oneline -n 20 --graph --abbrev-commit"
 alias gl="git pull"
 alias gcam="git commit -am"
+alias gp="git push"
 alias gpu="git push -u"
 alias gprp="git pull --rebase && git push"
 alias gdm="git branch --merged | egrep -v \"(^\*|master|develop)\" | xargs git branch -d"
@@ -25,6 +26,8 @@ alias mct="mvn clean test"
 alias mcp="mvn clean package"
 alias mcc="mvn clean compile"
 alias mcist="mvn clean install -DskipTests"
+
+alias dps="docker container ps"
 
 alias cddot="cd ~/dev/project/dotfiles"
 
