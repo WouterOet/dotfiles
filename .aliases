@@ -29,7 +29,8 @@ alias mcist="mvn clean install -DskipTests"
 
 alias dps="docker container ps"
 
-alias cddot="cd ~/dev/project/dotfiles"
+alias cddot="cd ~/dev/projects/dotfiles"
+alias cdpro="cd ~/dev/projects"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
